@@ -807,7 +807,7 @@ footer#footer .actions a:hover img, .menu-contact-btn:hover img{
 
   .cards-scroller .cards .card-wrapper .card .head {
     flex-direction: column;
-    gap: 80px 30px;
+    gap: 40px 30px;
   }
 
   .cards-scroller .cards .card-wrapper .card .head .qr {
