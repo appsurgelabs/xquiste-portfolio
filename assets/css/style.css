@@ -1547,6 +1547,7 @@ article ul, article ol{
   flex-direction: column;
   gap: 5px;
   color: white;
+  padding: 20px;
 }
 
 article ul li::marker {
