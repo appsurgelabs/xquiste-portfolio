@@ -710,6 +710,7 @@ footer#footer .actions a:hover img, .menu-contact-btn:hover img{
   border-radius: 20px;
   border: solid 1.5px var(--border-color-secondary);
   height: 90%;
+  max-height: 600px;
   justify-content: space-between;
 }
 
