@@ -1546,8 +1546,21 @@ article ul, article ol{
   display: flex;
   flex-direction: column;
   gap: 5px;
+  color: white;
 }
 
+article ul li::marker {
+  color: #5d5d5d;
+  content: '✱';
+}
+
+article ol li::marker {
+  color: #5d5d5d;
+}
+
+article ul li, article ol li{
+  padding-left: 5px;
+}
 
 article h1 {
   font-size: 28px;
