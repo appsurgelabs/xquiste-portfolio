@@ -363,7 +363,6 @@ window.addEventListener("DOMContentLoaded", () => {
         const tempDiv = document.createElement('div');
         tempDiv.innerHTML = html;
         const posts = tempDiv.querySelectorAll('a.card');
-        console.log(posts)
         generateDistinctRandomIntList(0,posts.length - 1, randomPostsCount).forEach(index => {
           randomPostsContainer.appendChild(posts[index]);
         })
@@ -704,9 +703,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
           /*====== Left and Right Arrow Button Click Event Listeners Setup ======*/
           nextButton.addEventListener("click", () => {
-            console.log("click");
             if (pagination == paginationButtons.length - 1) return;
-            console.log("click");
             pagination += 1;
             updatePagination();
           });
