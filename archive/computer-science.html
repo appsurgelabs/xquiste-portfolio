@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page Title -->
+    <title>Computer Science | Explore Topics & Insights</title>
+    <!-- Page Description for SEO -->
+    <meta name="description"
+        content="Discover articles, tutorials, and insights on Computer Science, covering AI, programming, cybersecurity, and more.">
+    <meta name="robots" content="index, follow">
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+    <!-- External JavaScript Libraries -->
+    <script src="/assets/js/gsap.min.js"></script>
+    <script src="/assets/js/scrolltrigger.min.js"></script>
+    <script src="/assets/js/lenis.min.js"></script>
+    <!-- Script -->
+    <script src="/assets/js/main.js"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <!-- ========== LOADING SCREEN ========== -->
+    <div id="loading-screen">
+        <img src="/assets/icons/ui/loading.svg" alt="loading icon">
+    </div>
+    <!-- ========== HEADER SECTION ========== -->
+    <div id="header"></div>
+    <!-- ========== NAVIGATION MENU ========== -->
+    <div id="navigation-menu"></div>
+    <section class="page-header">
+        <h2>COMPUTER SCIENCE</h2>
+        <h4>READ MY TAKE ON THIS TOPIC</h4>
+    </section>
+    <!-- ========== ARTICLE SWIPER ========== -->
+    <div data-swipe-interval=3 class="swipe-card side-padding">
+        <!-- Featured Images -->
+        <div class="image-collection head">
+            <a href="#"><img class="featured-image" src="/assets/img/posts/mastering-full-stack-cevelopment.jpeg"
+                    alt="post featured image"></a>
+            <a href="#"><img class="featured-image" src="/assets/img/posts/game-development.jpeg"
+                    alt="post featured image"></a>
+            <a href="#"><img class="featured-image" src="/assets/img/posts/devops.jpeg" alt="post featured image"></a>
+            <a href="#"><img class="featured-image" src="/assets/img/posts/mobile-app-development.jpeg"
+                    alt="post featured image"></a>
+        </div>
+        <div class="foot">
+            <!-- Titles -->
+            <div class="title-collection">
+                <h3 class="title">Mastering Full-stack Development</h3>
+                <h3 class="title">How Game Development Is Shaping The Future Of Interactive Media </h3>
+                <h3 class="title">Understanding Devops</h3>
+                <h3 class="title">Exploring Mobile App Development For Modern Businesses</h3>
+            </div>
+            <div class="content">
+                <i class="swipe-button left-swipe-button">
+                    <img src="/assets/icons/ui/left-arrow.svg" alt="Left arrow">
+                </i>
+                <!-- Descriptions -->
+                <div class="description-collection">
+                    <p class="description">Mastering full-stack development involves gaining expertise in both front-end
+                        and back-end technologies, enabling developers to build and maintain dynamic web applications.
+                        It requires knowledge of frameworks, databases, and deployment strategies to create seamless
+                        user experiences.
+                    </p>
+                    <p class="description">Game development is driving technological innovation, enhancing user
+                        interaction, and creating immersive experiences. Advances in graphics, AI, and virtual reality
+                        are transforming how players engage with games and influencing other industries like education
+                        and training.
+                    </p>
+                    <p class="description">DevOps integrates development and operations to enhance software delivery,
+                        improve collaboration, and increase efficiency. It focuses on automation, continuous
+                        integration, and deployment, ensuring faster releases and higher software quality while reducing
+                        development bottlenecks.
+                    </p>
+                    <p class="description">Mobile app development plays a critical role in business growth by improving
+                        customer engagement and providing convenient access to services. Leveraging native and
+                        cross-platform frameworks ensures responsive, feature-rich applications tailored to user needs.
+                    </p>
+                </div>
+                <i class="swipe-button right-swipe-button">
+                    <img src="/assets/icons/ui/right-arrow.svg" alt="Right arrow">
+                </i>
+            </div>
+        </div>
+    </div>
+    <!-- ========== Posts Collection ========== -->
+    <section class="page-section side-padding">
+        <div class="section-header">
+            <div class="icon">
+                <img src="/assets/icons/ui/posts-icon.svg" alt="posts icon">
+            </div>
+            <div class="heading">
+                <h4>POSTS</h4>
+                <p>EXPLORE RELATED POSTS.</p>
+            </div>
+        </div>
+        <div class="content">
+            <!-- ========== ARTICLES CONTAINER ========== -->
+            <div data-archive="computer-science" data-pagination=2 class="cards-collection paginated-articles"></div>
+        </div>
+    </section>
+    <!-- ========== CATEGORIES ========== -->
+    <div id="categories-container">
+    </div>
+    <!-- ========== FOOTER ========== -->
+    <footer id="footer"></footer>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page Title -->
+    <title>Contact | Nicholas Carmichael – Get in Touch</title>
+    <!-- Page Description for SEO -->
+    <meta name="description"
+        content="Get in touch with Nicholas Carmichael for inquiries, collaborations, or professional discussions. Reach out today!">
+    <meta name="robots" content="index, follow">
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+    <!-- External JavaScript Libraries -->
+    <script src="/assets/js/gsap.min.js"></script>
+    <script src="/assets/js/scrolltrigger.min.js"></script>
+    <script src="/assets/js/lenis.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- Script -->
+    <script src="/assets/js/main.js"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <!-- ========== LOADING SCREEN ========== -->
+    <div id="loading-screen">
+        <img src="/assets/icons/ui/loading.svg" alt="loading icon">
+    </div>
+    <!-- ========== HEADER SECTION ========== -->
+    <div id="header"></div>
+    <!-- ========== NAVIGATION MENU ========== -->
+    <div id="navigation-menu"></div>
+    <!-- ========== PAGE HEADING ========== -->
+    <div class="page-heading">
+        <h2>LET'S WORK TOGETHER</h2>
+        <h4>CONTACT US</h4>
+    </div>
+    <!-- ========== CONTACT FORM ========== -->
+    <section class="side-padding">
+        <form id="contact-form" class="contact-form">
+            <h3 class="form-heading">FILL THIS FORM OUT</h3>
+            <input id="name" name="name" placeholder="name" required>
+            <input id="email" name="email" placeholder="email" type="email" required>
+            <textarea id="message" name="message" placeholder="message" required></textarea>
+            <input type="submit" value="SEND MAIL">
+        </form>
+    </section>
+    <div class="contact-info side-padding">
+        <!-- ========== LOCATION ========== -->
+        <div class="location card">
+            <div class="head">
+                <h3>LOCATION</h3>
+            </div>
+            <div class="icon">
+                <img style="height: 64px; width: 64px;" src="/assets/icons/ui/location.svg" alt="Location">
+            </div>
+            <!-- Location Information -->
+            <ul>
+                <li>1234 Silicon Valley Blvd,</li>
+                <li>San Jose, CA 95123,</li>
+                <li>United States</li>
+            </ul>
+        </div>
+        <!-- ========== CONTACT NUMBERS ========== -->
+        <div class="phone card">
+            <div class="head">
+                <h3>CONTACT NUMBERS</h3>
+            </div>
+            <div class="icon">
+                <img style="height: 64px; width: 64px;" src="/assets/icons/ui/contact-icon.svg" alt="Contact">
+            </div>
+            <!-- Phone Number Information -->
+            <ul>
+                <li>(415) 555-1234</li>
+                <li>(408) 555-5678</li>
+                <li>(818) 555-9876</li>
+            </ul>
+        </div>
+        <!-- ========== EMAILS ========== -->
+        <div class="email card">
+            <div class="head">
+                <h3>EMAIL</h3>
+            </div>
+            <div class="icon">
+                <img style="height: 64px; width: 64px;" src="/assets/icons/ui/email-icon.svg" alt="Email">
+            </div>
+            <!-- Email Information -->
+            <ul>
+                <li>nicholas.carmichael@example.com</li>
+                <li>nicholas.carmichael123@email.com</li>
+                <li>carmichael.nicholas@gmail.com</li>
+            </ul>
+        </div>
+        <!-- ========== SOCIAL PROFILES ========== -->
+        <div class="profiles card">
+            <div class="head">
+                <h3>SOCIAL PROFILES</h3>
+                <p>STAY CONNECTED THROUGH MY SOCIAL PROFILES</p>
+            </div>
+            <!-- Social Profile -->
+            <div class="chip-collection">
+                <a href="#" class="chip" target="_blank">
+                    <!-- SocialMedia Icon -->
+                    <img src="/assets/icons/logo/instagram.svg" alt="instagram">
+                    <!-- SocialMedia Title -->
+                    <div class="text">INSTAGRAM</div>
+                </a>
+                <a href="#" class="chip">
+                    <!-- SocialMedia Icon -->
+                    <img src="/assets/icons/logo/fb.svg" alt="facebook">
+                    <!-- SocialMedia Title -->
+                    <div class="text">FACEBOOK</div>
+                </a>
+                <a href="#" class="chip" target="_blank">
+                    <!-- SocialMedia Icon -->
+                    <img src="/assets/icons/logo/github.svg" alt="github">
+                    <!-- SocialMedia Title -->
+                    <div class="text">GITHUB</div>
+                </a>
+                <a href="#" class="chip" target="_blank">
+                    <!-- SocialMedia Icon -->
+                    <img src="/assets/icons/logo/linkedin.svg" alt="linkedin">
+                    <!-- SocialMedia Title -->
+                    <div class="text">LINKEDIN</div>
+                </a>
+                <a href="#" class="chip" target="_blank">
+                    <!-- SocialMedia Icon -->
+                    <img src="/assets/icons/logo/dribble.svg" alt="dribble">
+                    <!-- SocialMedia Title -->
+                    <div class="text">DRIBBLE</div>
+                </a>
+                <a href="#" class="chip" target="_blank">
+                    <!-- SocialMedia Icon -->
+                    <img src="/assets/icons/logo/youtube.svg" alt="youtube">
+                    <!-- SocialMedia Title -->
+                    <div class="text">YOUTUBE</div>
+                </a>
+                <a href="#" class="chip" target="_blank">
+                    <!-- SocialMedia Icon -->
+                    <img src="/assets/icons/logo/twitter.svg" alt="twitter">
+                    <!-- SocialMedia Title -->
+                    <div class="text">TWITTER</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="alert-box">
+        <div class="success"><img src="/assets/icons/ui/alert-success.svg" alt="success icon">Message Sent Successfully
+        </div>
+        <div class="error"><img src="/assets/icons/ui/alert-error.svg" alt="error icon">Error Occured</div>
+    </div>
+    <!-- ========== FOOTER ========== -->
+    <footer id="footer"></footer>
+    <script>
+        const alertBox = document.querySelector('.alert-box');
+        (function () {
+            emailjs.init("YOUR_USER_ID");
+        })();
+
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
+                name: name,
+                email: email,
+                message: message
+            }).then(
+                function (response) {
+                    alertBox.classList.add('success');
+                    gsap.to(alertBox, {
+                        opacity: 1, duration: 0.3, onComplete: () => {
+                            setTimeout(() => {
+                                gsap.to(alertBox, { opacity: 0, duration: 0.3 })
+                            }, 2000)
+                        }
+                    })
+                    document.getElementById('contact-form').reset();
+                },
+                function (error) {
+                    alertBox.classList.add('error');
+                    gsap.to(alertBox, {
+                        opacity: 1, duration: 0.3, onComplete: () => {
+                            setTimeout(() => {
+                                gsap.to(alertBox, { opacity: 0, duration: 0.3 })
+                            }, 2000)
+                        }
+                    })
+                }
+            );
+        });
+
+    </script>
+</body>
+
+</html>
