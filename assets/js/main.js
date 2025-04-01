@@ -723,12 +723,12 @@ window.addEventListener("DOMContentLoaded", () => {
   const testimonials = document.querySelector("#testimonials");
   if (testimonials) {
     const top = testimonials.querySelector(".top");
-    top.style.setProperty("--scroll-width", `-${top.scrollWidth + 20}px`);
+    top.style.setProperty("--scroll-width", `-${top.children.length * 670}px`);
     top.style.setProperty("--scroll-time", `${top.children.length * 5}s`);
     top.innerHTML += top.innerHTML;
 
     const bottom = testimonials.querySelector(".bottom");
-    bottom.style.setProperty("--scroll-width", `-${bottom.scrollWidth + 20}px`);
+    bottom.style.setProperty("--scroll-width", `-${bottom.children.length * 670}px`);
     bottom.style.setProperty("--scroll-time", `${bottom.children.length * 5}s`);
     bottom.innerHTML += bottom.innerHTML;
   }
