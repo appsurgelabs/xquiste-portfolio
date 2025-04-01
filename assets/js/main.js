@@ -684,7 +684,7 @@ window.addEventListener("DOMContentLoaded", () => {
             currentActiveButton.classList.add("current");
 
             if (collectionElement) {
-              fetch(`/pagination/${archive}/page-${pagination + 1}.html`)
+              fetch(`/xquiste-portfolio/pagination/${archive}/page-${pagination + 1}.html`)
                 .then((response) => response.text())
                 .then((html) => {
                   collectionElement.innerHTML = html;

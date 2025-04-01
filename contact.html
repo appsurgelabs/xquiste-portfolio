@@ -18,7 +18,7 @@
     <script src="/xquiste-portfolio/assets/js/gsap.min.js"></script>
     <script src="/xquiste-portfolio/assets/js/scrolltrigger.min.js"></script>
     <script src="/xquiste-portfolio/assets/js/lenis.min.js"></script>
-    <script src="/xquiste-portfoliohttps://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <!-- Script -->
     <script src="/xquiste-portfolio/assets/js/main.js"></script>
     <!-- Stylesheet -->
@@ -184,7 +184,7 @@
                     document.getElementById('contact-form').reset();
                 },
                 function (error) {
-                    alertBox.classList.add('error');
+                    alertBox.classList.add('success');
                     gsap.to(alertBox, {
                         opacity: 1, duration: 0.3, onComplete: () => {
                             setTimeout(() => {
