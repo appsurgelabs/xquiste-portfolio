@@ -762,7 +762,7 @@ footer#footer .actions a:hover img, .menu-contact-btn:hover img{
   
 }
 .cards-scroller .cards .card-wrapper .card .body p {
-  max-height: 100%;
+  max-height: 30vh;
   overflow-y: auto;
   text-align: center;
   font-size: 14px;
