@@ -832,6 +832,6 @@ window.addEventListener("DOMContentLoaded", () => {
     gsap.set('body', {height : 'auto', overflowY : 'auto'})
     gsap.to('#loading-screen', {opacity : 0, pointerEvents : 'none'})
     lenis.start()
-  },800)
+  },2000)
   
 });
