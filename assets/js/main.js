@@ -197,7 +197,7 @@ window.addEventListener("DOMContentLoaded", () => {
   /*====== Fetch Header and Navigation Menu, Set Timezone, and Real-Time Clock ======*/
   const header = document.getElementById("header");
   if (header) {
-    fetch("../components/header.html")
+    fetch("/xquiste-portfolio/components/header.html")
       .then((response) => response.text())
       .then((html) => {
         header.outerHTML = html;
@@ -220,7 +220,7 @@ window.addEventListener("DOMContentLoaded", () => {
         /*====== Navigation Menu Setup with Toggle ======*/
         const navigationMenu = document.getElementById("navigation-menu");
         if (navigationMenu) {
-          fetch("../components/menu.html")
+          fetch("/xquiste-portfolio/components/menu.html")
             .then((response) => response.text())
             .then((data) => {
               navigationMenu.outerHTML = data;
@@ -342,7 +342,7 @@ window.addEventListener("DOMContentLoaded", () => {
   /*====== Fetch and Setup Footer ======*/
   const footer = document.getElementById("footer");
   if (footer) {
-    fetch("../components/footer.html")
+    fetch("/xquiste-portfolio/components/footer.html")
       .then((response) => response.text())
       .then((html) => {
         footer.outerHTML = html;
@@ -357,7 +357,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const randomPostsContainer = document.getElementById("random-posts");
   if (randomPostsContainer) {
     const randomPostsCount = Number(randomPostsContainer.getAttribute('data-random-posts-count') ?? 6);
-    fetch("../components/random-posts.html")
+    fetch("/xquiste-portfolio/components/random-posts.html")
       .then((response) => response.text())
       .then((html) => {
         const tempDiv = document.createElement('div');
@@ -376,7 +376,7 @@ window.addEventListener("DOMContentLoaded", () => {
   /*====== Fetch and Setup Categories ======*/
   const categoryContainer = document.getElementById("categories-container");
   if (categoryContainer) {
-    fetch("../components/categories.html")
+    fetch("/xquiste-portfolio/components/categories.html")
       .then((response) => response.text())
       .then((html) => {
         categoryContainer.outerHTML = html;
@@ -386,7 +386,7 @@ window.addEventListener("DOMContentLoaded", () => {
   /*====== Fetch and Setup Tags ======*/
   const tagsContainer = document.getElementById("tags-container");
   if (tagsContainer) {
-    fetch("../components/tags.html")
+    fetch("/xquiste-portfolio/components/tags.html")
       .then((response) => response.text())
       .then((html) => {
         tagsContainer.outerHTML = html;
@@ -631,7 +631,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const container = collectionElement.closest(".content");
 
     /*====== Pagination Setup ======*/
-    fetch(`../components/pagination.html`)
+    fetch(`/xquiste-portfolio/components/pagination.html`)
       .then((response) => response.text())
       .then((html) => {
         container.innerHTML += html;
