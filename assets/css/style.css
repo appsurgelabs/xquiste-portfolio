@@ -384,8 +384,9 @@ footer#footer .actions a:hover img, .menu-contact-btn:hover img{
   height: 62px;
   width: 62px;
   position: absolute;
-  bottom : 64px;
+  top : 32px;
   right: 32px;
+  background-color: var(--primary-color);
 }
 
 @media screen and (max-width: 800px) {
@@ -436,6 +437,7 @@ footer#footer .actions a:hover img, .menu-contact-btn:hover img{
   padding-left: 64px;
   padding-top: 32px;
   overflow-y: scroll;
+  position: relative;
   mask-image: linear-gradient(to top, transparent 0%, black 10%, black 90%, transparent 100%);
 }
 
@@ -470,9 +472,7 @@ footer#footer .actions a:hover img, .menu-contact-btn:hover img{
   height: 0px;
   overflow: hidden;
   opacity: 0;
-  margin-left: 26px;
-  border-left: solid 1px var(--border-color-primary);
-  padding-left: 16px;
+  
 }
 
 #navigation-menu nav ul .index {
@@ -515,8 +515,8 @@ footer#footer .actions a:hover img, .menu-contact-btn:hover img{
 
 @media screen and (max-width: 800px) {
   #navigation-menu nav ul {
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 35px;
+    line-height: 35px;
   }
   #navigation-menu nav ul .index {
     height: 40px;
@@ -534,9 +534,6 @@ footer#footer .actions a:hover img, .menu-contact-btn:hover img{
   }
   #navigation-menu nav {
     padding-left: 16px;
-  }
-  #navigation-menu nav ul li ul {
-    margin-left: 16px;
   }
 }
 
@@ -3028,7 +3025,18 @@ section#hero-section div.bottom .right {
 
 .contact-info .card ul li {
   font-weight: 600;
+  white-space: nowrap;     
+  overflow: hidden;     
+  text-overflow: ellipsis;
+  max-width: 250px; 
 }
+
+@media screen and (max-width : 400px) {
+  .contact-info .card ul li {
+    max-width: 250px; 
+  }
+}
+
 
 .contact-form {
   background-color: var(--container-primary);
